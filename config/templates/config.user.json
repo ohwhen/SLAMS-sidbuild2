@@ -1,16 +1,35 @@
 {
-
-	"aws": {
-		"apiPath":"/dev/sdks/AWS-ElasticBeanstalk-CLI-2.1/api/bin"
-		, "accessKey": ""
-		, "secretKey": ""
+	"deploy": {
+		"dev": [
+			{
+				"user": "user"
+				, "privateKey": "/Users/user/.ssh/id_rsa"
+				, "passphrase": ""
+			}
+		]
+		,"stg": [
+			{
+				"user": "user"
+				, "privateKey": "/Users/user/.ssh/id_rsa"
+				, "passphrase": ""
+			}
+		]
+		,"prd": [
+			{
+				"user": "user"
+				, "privateKey": "/Users/user/.ssh/id_rsa"
+				, "passphrase": ""
+			}
+		]
 	}
+
 
 	, "flash": {
 		"mxmlc": "mxmlc"
-		, "sdkPath":"/dev/sdks/flex/flex_sdk_4.5.0.20967A"
-		, "apparat": "/dev/sdks/apparat/apparat-1.0-SNAPSHOT"
+		, "sdkPath":"/Users/user/sdks/flex/flex_sdk_4.5.0.20967A"
+		, "apparat": "/Users/user/sdks/apparat/apparat-1.0-SNAPSHOT"
 	}
 	
+
 }
 

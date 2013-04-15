@@ -6,7 +6,7 @@
 		"dev": [
 			{
 				"target": "/var/www/vhosts/internal/test/dev/"
-				, "host": "preview.sidlee.com"
+				, "host": "preview.com"
 				, "mode": "ssh"
 				, "type": "rmcp"
 			}
@@ -14,7 +14,7 @@
 		, "stg": [
 			{
 				"target": "/var/www/vhosts/internal/test/stg/"
-				, "host": "preview.sidlee.com"
+				, "host": "preview.com"
 				, "mode": "ssh"
 				, "type": "rmcp"
 			}
@@ -22,7 +22,7 @@
 		, "prd": [
 			{
 				"target": "/var/www/vhosts/internal/test/prd/"
-				, "host": "preview.sidlee.com"
+				, "host": "preview.com"
 				, "mode": "ssh"
 				, "type": "rmcp"
 			}
