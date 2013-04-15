@@ -1,7 +1,5 @@
-try {
+if( require.resolve( 'sidbuild2' ) ) {
 	module.exports = require('sidbuild2');
-} catch( e ) {
-	
-} finally {
+} else {
 	module.exports = require('./lib/sidbuild2mock');
 }
