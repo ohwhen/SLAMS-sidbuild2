@@ -1,0 +1,25 @@
+{
+	"name": "sidbuild2"
+	, "version": "0.0.1"
+	, "description": "Sid Lee build script mock"
+	, "private": true
+	, "bin": { 
+		"sidbuild2": "index.js" 
+	}
+	, "author": "Bastian Roden (broden@sidlee.com)"
+	, "engines": { 
+		"node": "*" 
+	}
+	, "dependencies": {
+		"optimist": "0.3.4"
+		, "async": "0.1.22"
+		, "dateformat": "1.0.2-1.2.3"
+		, "deepmerge": "0.2.5"
+		, "fs-extra": "0.3.1"
+		, "buildify": "0.3.1"
+	}
+	, "optionalDependencies" : { 
+		"sidbuild2": "git+ssh://git@git.sidlee.com:sidlee/sidlee_sidbuild2.git#beta"
+	}
+
+}
