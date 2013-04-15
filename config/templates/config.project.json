@@ -1,0 +1,47 @@
+{
+	"name": "Client Project"
+	
+	, "aws": {
+		"name": "Test Project"
+		, "environments": {
+			"stg": {
+				"name":"Project-STAGING"
+				, "regions": ["eu-west-1"]
+			}
+			, "pro": {
+				"name":"Project-PROD"
+				, "regions": ["eu-west-1","us-west-2"]
+			}
+		}
+
+		
+	}
+	, "flash": {
+		"swfs": [
+			{
+				"sourcePath": "src"
+				, "targetPlayer": "10.1"
+				, "width": 800
+				, "height": 600
+				, "input": "com/client/project/Main.as"
+				, "output": "deploy/public_html/assets/swf/Main.swf"
+				, "debug": false
+				, "backgroundColor": "0x000000"
+				, "frameRate": 60
+				, "swcLibraries": [
+					"assets/assets.swc"
+					,"assets/video.swc"
+					,"libs/analytics.swc"
+				]
+				, "libraryPaths": [
+					"libs/Sid Lee/"
+					, "libs/RobotLegs/"
+					, "libs/Swift Suspenders/"
+				]
+
+			}
+		]
+
+	}
+
+}
