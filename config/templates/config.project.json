@@ -1,21 +1,34 @@
 {
 	"name": "Client Project"
-	
-	, "aws": {
-		"name": "Test Project"
-		, "environments": {
-			"stg": {
-				"name":"Project-STAGING"
-				, "regions": ["eu-west-1"]
-			}
-			, "pro": {
-				"name":"Project-PROD"
-				, "regions": ["eu-west-1","us-west-2"]
-			}
-		}
+	, "source": "src/www"
 
-		
+	, "deploy" : {
+		"dev": [
+			{
+				"target": "/var/www/vhosts/internal/test/dev/"
+				, "host": "preview.sidlee.com"
+				, "mode": "ssh"
+				, "type": "rmcp"
+			}
+		]
+		, "stg": [
+			{
+				"target": "/var/www/vhosts/internal/test/stg/"
+				, "host": "preview.sidlee.com"
+				, "mode": "ssh"
+				, "type": "rmcp"
+			}
+		]
+		, "prd": [
+			{
+				"target": "/var/www/vhosts/internal/test/prd/"
+				, "host": "preview.sidlee.com"
+				, "mode": "ssh"
+				, "type": "rmcp"
+			}
+		]
 	}
+
 	, "flash": {
 		"swfs": [
 			{
